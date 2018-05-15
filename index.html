@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Igloo Coding Challenge </title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+  <div class="hamburger_menu" onclick="openNav()"> &#9776; </div>
+  <nav id=mobile_menu>
+    <ul>
+      <li><input type="text" placeholder="Search everywhere"></li>
+      <li><a onclick="closeNav()" href="#"> Home</a> </li>
+      <li><a class="active" onclick="closeNav()" href="#">Dashboard</a> </li>
+      <li><a onclick="closeNav()" href="#">About</a></li>
+      <li><a onclick="closeNav()" href="#">Campaigns</a></li>
+      <li><a onclick="closeNav()" href="#">Files</a> </li>
+      <li><a onclick="closeNav()" href="#"> Departments</a></li>
+      <li><a onclick="closeNav()" href="#"> People</a></li>
+    </ul>
+    <button class="hamburger_menu_close" onclick="closeNav()"> Close</button>
+  </nav>
+  <nav id="n-primary">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a class="active" href="#">Dashboard</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Campaigns</a></li>
+      <li><a href="#">Files</a></li>
+      <li><a href="#">Departments</a></li>
+      <li><a href="#">People</a></li>
+      <li><input type="text" placeholder="Search everywhere"></li>
+    </ul>
+  </nav>
+  <div class="bannerContainer">
+    <div>
+      <div class="banners" id="slideOne"></div>
+      <div class="banners" id="slideTwo"></div>
+      <div class="banners" id="slideThree"></div>
+      <div id="overlay"></div>
+    </div>
+    <div id="headerContainer">
+      <h1>Welcome to the Community</h1>
+      <h6>Share, connect and collaborate.</h6>
+    </div>
+    <div id="bannerButtonContainer">
+      <button class="bannerButton" onclick="showBanner(1)"></button>
+      <button class="bannerButton" onclick="showBanner(2)"></button>
+      <button class="bannerButton" onclick="showBanner(3)"></button>
+    </div>
+  </div>
+  <div class="storiesContainer">
+    <h2>Stories from Us</h2>
+    <div class="storyCard">
+      <p class="date">May 20,2015</p>
+      <h4> Corporate Announcement</h4>
+      <div class="imgCard"><img src="assets/images/pic1-1.jpg" /></div>
+      <div class="textCard">
+        <p>We want to ensure you are comfortable with our new and awesome platform. Since we have launched our new community
+          we have been receiving excellent feedback, but we would like to personally hear from you.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+    <div class="storyCard">
+      <p class="date">July 18, 2015</p>
+      <h4>New Office Location</h4>
+      <div class="imgCard"><img src="assets/images/pic2.jpg" /></div>
+      <div class="textCard">
+        <p>We have officially moved into our new office location! It has been a long time coming but we have survived and now
+          we are settling in. </p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+    <div class="storyCard">
+      <p class="date">August 26,2015</p>
+      <h4> Connect with Coworkers</h4>
+      <div class="imgCard"><img src="assets/images/pic3-1.jpg"></div>
+      <div class="textCard">
+        <p>We are looking into using this new platform to further assist you in connecting with your coworkers. We are hoping
+          this tool will rock!</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div>
+      <div id="footerLeft">
+        <p> &copy; 2016 </p>
+      </div>
+      <div id="footerRight"> <img src="assets/images/igloo.jpg" width="60px"></div>
+    </div>
+
+
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
